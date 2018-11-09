@@ -1,0 +1,15 @@
+
+{
+    "manifest_version": 2,
+    "name": "AWS Region Alert",
+    "description": "AWS Regionが適切でない場合に警告します",
+    "version": "1.0",
+  
+    "content_scripts": [
+      {
+        "matches": ["https://*.console.aws.amazon.com/*"],
+        "js": ["script.js"],
+        "run_at": "document_end"
+      }
+    ]
+  }
